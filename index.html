@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://sharmaarjun1228.github.io/arjun_portpolio-/">Arjun Sharma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#charts">Charts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="text-center my-4">Election Dashboard</h1>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <label for="file1">Upload CSV File 1:</label>
+                <input type="file" id="file1" class="form-control-file">
+            </div>
+
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <label for="filter">Filter by Party:</label>
+                <select id="filter" class="form-control">
+                    <option value="All">All</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <canvas id="scatterChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="doughnutChart"></canvas>
+            </div>
+        </div>
+
+  
+
+        <script src="https://gist.github.com/sharmaarjun1228/8c18f335b9550c2a43abf40ea9e349c8.js"></script>
+
+
+            <!-- Contact Section -->
+    <section id="contact" class="bg-blue text-black py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Got a project in mind or just want to say hi? Feel free to drop me a message:</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>Connect with me on LinkedIn or GitHub:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/arjunsharma/" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/arjunsharma/" class="text-white"><i class="fab fa-github fa-2x"></i></a>
+                        </li>
+                    </ul>
+                    <p>Email: arjun.sharma@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section id="about-me" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="lead">I'm Arjun Sharma,
+                        I am a dedicated and passionate data scientist with a keen interest in leveraging data-driven insights to solve complex problems. Armed with a Master's degree in Computer Science and extensive training in data analysis, statistical modeling, and machine learning, I am driven by a relentless curiosity to explore the vast realms of data science.
+
+My journey into the world of data began with a strong academic foundation, which I have since complemented with hands-on experience and a relentless pursuit of excellence. Throughout my career, I have successfully tackled various projects ranging from predictive analytics to exploratory data analysis, each contributing to my growth as a data professional.
+
+I am committed to making a meaningful impact through my work, whether it's predicting rocket landing outcomes or analyzing app engagement metrics. My goal is not just to uncover insights but to translate them into actionable strategies that drive innovation and foster growth.
+
+With a blend of analytical prowess, problem-solving skills, and a passion for continuous learning, I am eager to embark on new challenges and contribute to the ever-evolving field of data science.
+                        
+                        
+                        
+                        <p>Feel free to explore my portfolio and projects!</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/arjunsharma1228/" class="btn btn-primary mr-2">LinkedIn</a>
+                        <a href="https://github.com/sharmaarjun1228/" class="btn btn-dark">GitHub</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Include a professional photo of yourself here -->
+                    <img src="pic.png" alt="Arjun Sharma" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-blue text-black text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Arjun Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
